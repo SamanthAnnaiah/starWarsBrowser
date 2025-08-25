@@ -10,7 +10,7 @@ export function Planets() {
     fetch("https://swapi.info/api/planets")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log("fetched planets data:");
         setplanetsList(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
