@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import swarslogo from "../assets/swarslogo.png";
 
 function HomeLinks() {
   return (
@@ -8,8 +9,8 @@ function HomeLinks() {
           <Link to="/">
             <img
               className="logoimg"
-              src="/src/assets/swarslogo.png"
-              alt=""
+              src={swarslogo}
+              alt="Star Wars Logo"
               width={100}
               height={100}
             />
