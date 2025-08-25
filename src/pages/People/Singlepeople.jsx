@@ -12,7 +12,7 @@ export function Singlepeople() {
   useEffect(() => {
     const fetchsdata = async () => {
       try {
-        console.log("selected people", ppl);
+        console.log("selected people:", ppl);
         const response = await fetch(`https://swapi.info/api/people/${ppl}`);
         const data = await response.json();
         setcurrentPerson(data);
