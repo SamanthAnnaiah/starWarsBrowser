@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "smb";
+  src: url("/src/fonts/SpaceMono-Bold.ttf");
+}
+@font-face {
+  font-family: "smbi";
+  src: url("/src/fonts/SpaceMono-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "smi";
+  src: url("/src/fonts/SpaceMono-Italic.ttf");
+}
+@font-face {
+  font-family: "smr";
+  src: url("/src/fonts/SpaceMono-Regular.ttf");
+}
+
+html {
+  background-image: url("assets/wone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(241, 239, 236);
+  font-family: "smb";
+}
+
+.mitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+  column-gap: 80px;
+  text-decoration: none;
+}
+
+.tdl {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 11px #fff, 0 0 12px #0fa,
+    0 0 12px #0fa, 0 0 13px #0fa, 0 0 32px #0fa, 0 0 151px #0fa;
+  transition: text-shadow 0.1s, color 0.1s;
+}
+
+.m1 {
+  margin: 12px;
+}
+
+.bgs1 {
+  background-color: rgba(112, 123, 31, 0.16);
+}
+.bgs2 {
+  background-color: rgba(55, 165, 51, 0.177);
+}
+.bgs3 {
+  background-color: rgba(55, 182, 155, 0.144);
+}
+.bgs4 {
+  background-color: rgba(98, 134, 205, 0.182);
+}
+.bgs5 {
+  background-color: rgba(91, 84, 187, 0.155);
+}
+.bgs6 {
+  background-color: rgba(142, 68, 184, 0.138);
+}
+
+.tdl:hover {
+  text-shadow: 0 0 7px #060505, 0 0 10px #1f1212, 0 0 11px #150202,
+    0 0 12px rgb(2, 22, 16), 0 0 12px rgb(2, 62, 42), 0 0 13px rgb(3, 69, 47),
+    0 0 32px rgb(1, 48, 33), 0 0 151px rgb(20, 54, 43);
+  color: white;
+}
+
+ol.mitems {
+  list-style-type: none;
+}
+
+.logoimg {
+  border-radius: 72px;
+}
+
+.stats_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #060505;
+  column-gap: 40px;
+}
+
+.stats_main_item {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  border: 0px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 4px 2px 2px black;
+  background-color: #9a505055;
+}
+
+.stats_main_h1 {
+  color: rgb(197, 211, 159);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.stats_main_h2 {
+  color: rgb(197, 211, 159);
+  font-size: 15px;
+  font-weight: bolder;
+}
+.stats_main_item p {
+  color: rgb(21, 21, 2);
+  font-weight: bolder;
+}
+
+.pagenumber_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.pagenumber_main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  border-radius: 40px;
+  font-weight: bolder;
+  box-shadow: rgba(15, 15, 16, 0.2) 0px 7px 29px 0px;
+  background-color: rgba(195, 145, 53, 0.485);
+}
+
+.pagenumber_main button:hover,
+.morecursor {
+  cursor: pointer;
+}
+
+.morecursor {
+  padding: 3px;
+  border: 0.2px solid saddlebrown;
+  background-color: rgba(139, 69, 19, 0.512);
+  border-radius: 7px;
+  margin: 3px;
+}
+
+.morecursor:hover {
+  text-decoration: underline;
+}
+
+.pcount {
+  display: inline-block;
+  padding: 0.25rem 0.625rem; /* 4px 10px */
+  font: 500 0.875rem/1 system-ui; /* 14px */
+  color: black;
+  background-color: rgba(195, 145, 53, 0.967);
+  box-shadow: rgba(15, 15, 16, 0.2) 0px 7px 29px 0px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.card_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_1 > div {
+  width: 30%;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: rgba(63, 49, 49, 0.529);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s;
+}
+
+.card_1 > div:hover {
+  background-color: rgba(209, 134, 29, 0.507);
+}
+
+.card_1_sub {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.ofl {
+  height: 50px !important;
+  overflow: auto;
+}
